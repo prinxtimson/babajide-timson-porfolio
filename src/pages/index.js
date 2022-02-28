@@ -1,30 +1,30 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
+import "../styles/index.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import UndrawProgramming from "../images/undraw_programming.svg"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <div className="row justify-content-center align-items-center flex-grow-1">
+      <div className="col-lg my-5">
+        <h1 className="mb-1" style={{ fontSize: "5.5rem" }}>
+          <span>Hello,</span>
+          <br />
+          <span>I'm Jide</span>
+        </h1>
+        <h2 style={{ color: "#08fdd8" }}>Web and Software Developer</h2>
+        <p className="text-muted">
+          Experineced Backend and Frontend Developer, and WordPress Expert. Very
+          good in Javascript and PHP languages and their frameworks.
+        </p>
+      </div>
+      <div className="col-lg">
+        <img src={UndrawProgramming} alt="A Programmer Illustration" />
+      </div>
+    </div>
   </Layout>
 )
 

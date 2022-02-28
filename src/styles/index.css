@@ -1,0 +1,43 @@
+.active {
+  color: #08fdd8 !important;
+}
+
+.nav-link:hover {
+  color: #08fdd8 !important;
+}
+
+.horizontal-line {
+  width: 100px;
+  height: 5px;
+  background-color: #08fdd8 !important;
+  margin: 0 auto;
+}
+
+.card-title:hover {
+  color: #08fdd8 !important;
+}
+
+.footer-text:hover {
+  color: #08fdd8 !important;
+}
+
+.my-btn {
+  background-color: transparent;
+  border: 1px solid #08fdd8 !important;
+  color: #08fdd8 !important;
+}
+
+.my-btn:hover {
+  background-color: #08fdd8 !important;
+  border: 1px solid #08fdd8 !important;
+  color: #000 !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .card-title {
+    color: #08fdd8 !important;
+  }
+  .text-muted {
+    color: #08fdd8 !important;
+  }
+}
