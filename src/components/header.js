@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <nav className="navbar navbar-expand-md navbar-dark">
-      <div className="container-fluid">
+      <div className="container">
         <h2 style={{ margin: 0 }} className="navbar-brand">
           <Link
             to="/"

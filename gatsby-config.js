@@ -20,13 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects`,
-      },
-    },
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `btlml9a7rixr`,
@@ -48,6 +41,15 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js", // Change to the script filename
+        integrity:
+          "sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D",
+        crossorigin: "anonymous",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

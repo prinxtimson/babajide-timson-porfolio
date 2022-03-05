@@ -11,13 +11,10 @@ const AboutMePage = () => (
     <div className="row align-items-center mt-5">
       <div className="col-lg-6">
         <StaticImage
-          src="../images/gatsby-astronaut.png"
-          width={300}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
+          src="../images/jide_timson.jpg"
           layout="fullWidth"
           placeholder="tracedSVG"
-          alt="A Gatsby astronaut"
+          alt="Babajide Timson"
           style={{ marginBottom: `1.45rem` }}
         />
       </div>
@@ -35,7 +32,7 @@ const AboutMePage = () => (
         </p>
       </div>
     </div>
-    <div className="mb-5">
+    <div className="mb-2">
       <p className="lh-lg">
         I have worked with different frameworks like React, Angular, React
         Native, NodeJs and Laravel. I have also different CMS platforms like
@@ -48,7 +45,91 @@ const AboutMePage = () => (
         UK base company.
       </p>
     </div>
+    <div className="my-4">
+      <h2 className="mb">Skills</h2>
+      <div className="row">
+        {SKILLS.map((arr, index) => (
+          <div className="col-12 col-md-6" key={index}>
+            {arr.map(skill => (
+              <div className="mb-4" key={skill.id}>
+                <h6 className="mb-2">{skill.value}</h6>
+                <div className="progress" style={{ height: 2 }}>
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{
+                      width: `${skill.level}%`,
+                      backgroundColor: "#fd2155",
+                    }}
+                    aria-valuenow={skill.level}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
   </Layout>
 )
 
 export default AboutMePage
+
+const SKILLS = [
+  [
+    {
+      id: "1",
+      value: "Javascript",
+      level: 98,
+    },
+    {
+      id: "2",
+      value: "NodeJS",
+      level: 99,
+    },
+    {
+      id: "3",
+      value: "ReactJS",
+      level: 95,
+    },
+    {
+      id: "4",
+      value: "Redux",
+      level: 95,
+    },
+    {
+      id: "5",
+      value: "GatsbyJS",
+      level: 75,
+    },
+  ],
+  [
+    {
+      id: "8",
+      value: "React Native",
+      level: 90,
+    },
+    {
+      id: "6",
+      value: "Laravel",
+      level: 90,
+    },
+    {
+      id: "7",
+      value: "PHP",
+      level: 93,
+    },
+    {
+      id: "9",
+      value: "AngularJS",
+      level: 65,
+    },
+    {
+      id: "10",
+      value: "WordPress",
+      level: 90,
+    },
+  ],
+]
