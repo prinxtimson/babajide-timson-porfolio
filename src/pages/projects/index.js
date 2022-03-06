@@ -54,7 +54,11 @@ export const query = graphql`
         id
         name
         featuredImage {
-          gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
+          gatsbyImageData(
+            placeholder: TRACED_SVG
+            layout: CONSTRAINED
+            height: 180
+          )
         }
         excerpt
         details {

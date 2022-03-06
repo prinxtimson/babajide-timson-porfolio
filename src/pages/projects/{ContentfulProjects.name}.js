@@ -134,6 +134,7 @@ export const query = graphql`
           github
           live
         }
+        duration
       }
       images {
         id

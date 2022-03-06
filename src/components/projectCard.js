@@ -23,8 +23,8 @@ const ProjectCard = ({ projects = [] }) => {
         return (
           <div
             key={id}
-            className="card shadow bg-dark"
-            style={{ width: "20rem" }}
+            className="card shadow bg-dark m-3"
+            style={{ width: "18rem" }}
           >
             <GatsbyImage
               image={pathToImage}
@@ -44,7 +44,7 @@ const ProjectCard = ({ projects = [] }) => {
                   <span
                     key={index}
                     className="badge mx-1"
-                    style={{ backgroundColor: "#fd2155" }}
+                    style={{ backgroundColor: "#fd2155", fontSize: 12 }}
                   >
                     {tag}
                   </span>
