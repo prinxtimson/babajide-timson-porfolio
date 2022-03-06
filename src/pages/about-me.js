@@ -14,7 +14,7 @@ const AboutMePage = () => (
           layout="fullWidth"
           placeholder="tracedSVG"
           alt="Babajide Timson"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ marginBottom: `1.4rem` }}
         />
       </div>
       <div className="col-lg-6">
