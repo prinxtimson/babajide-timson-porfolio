@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import ProjectCard from "../../components/ProjectCard"
+import ProjectCard from "../../components/projectCard"
 import "../../styles/index.css"
 
 const ProjectPage = ({ data }) => {
