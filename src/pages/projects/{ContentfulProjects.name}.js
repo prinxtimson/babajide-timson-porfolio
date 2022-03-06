@@ -4,6 +4,7 @@ import Layout from "../../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+import Seo from "../../components/seo"
 
 const ProjectTemplate = ({ data }) => {
   const {
@@ -29,7 +30,8 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <div>
+      <Seo title={name} />
+      <div className="py-4">
         <h1>
           {name}{" "}
           <span className="fs-3">: A Robotics Process Automation System</span>

@@ -35,16 +35,12 @@ const Layout = ({ children }) => {
   return (
     <div className="d-flex flex-column flex-grow-1">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className="container d-flex flex-column flex-grow-1">
-        <main className="d-flex flex-column flex-grow-1 justify-content-center">
+      <div className="d-flex flex-column flex-grow-1">
+        <main className="container d-flex flex-column flex-grow-1 justify-content-center">
           {children}
         </main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          <div className="row justify-content-around mb-2">
+        <footer className="container-fluid border-top pt-3">
+          <div className="row align-items-center justify-content-around mb-2">
             <div className="col-md-4 mb-4 mb-md-0">
               <div className="d-flex flex-column align-items-center d-md-block">
                 <span style={{ color: "#08fdd8" }}>Connect</span>
@@ -58,7 +54,13 @@ const Layout = ({ children }) => {
                         marginRight: 5,
                       }}
                     />
-                    <FaGithub />
+                    <a
+                      href="https://github.com/prinxtimson"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub color="white" />
+                    </a>
                   </div>
                   <div className="me-4 d-flex align-items-center">
                     <div
@@ -69,7 +71,13 @@ const Layout = ({ children }) => {
                         marginRight: 5,
                       }}
                     />
-                    <FaLinkedin />
+                    <a
+                      href="https://www.linkedin.com/in/jide-timson-3280b0ba/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedin color="white" />
+                    </a>
                   </div>
                   <div className="me-4 d-flex align-items-center">
                     <div
@@ -80,7 +88,13 @@ const Layout = ({ children }) => {
                         marginRight: 5,
                       }}
                     />
-                    <FaTwitter />
+                    <a
+                      href="https://twitter.com/BJ_Timson"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaTwitter color="white" />
+                    </a>
                   </div>
                   <div className="me-4 d-flex align-items-center">
                     <div
@@ -91,7 +105,13 @@ const Layout = ({ children }) => {
                         marginRight: 5,
                       }}
                     />
-                    <FaFacebook />
+                    <a
+                      href="https://www.facebook.com/KooSooShee"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaFacebook color="white" />
+                    </a>
                   </div>
                   <div className="me-4 d-flex align-items-center">
                     <div
@@ -102,7 +122,13 @@ const Layout = ({ children }) => {
                         marginRight: 5,
                       }}
                     />
-                    <FaInstagram />
+                    <a
+                      href="https://www.instagram.com/ioluwatimmie/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagram color="white" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -110,7 +136,7 @@ const Layout = ({ children }) => {
             <div className="col-md-4">
               <div className="d-flex flex-column align-items-center d-md-block">
                 <span style={{ color: "#08fdd8" }}>Say hello</span>
-                <p>
+                <p className="mb-0">
                   <a href="mailto:timson.babajide@gmail.com">
                     timson.babajide@gmail.com
                   </a>
@@ -118,8 +144,11 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
-          <div className="d-flex justify-content-center">
-            © {new Date().getFullYear()}, Babajide Timson. All rights reserved.
+          <div className="d-flex justify-content-center mt-4">
+            <p style={{ fontSize: 14 }}>
+              © {new Date().getFullYear()}, Babajide Timson. All rights
+              reserved.
+            </p>
           </div>
         </footer>
       </div>

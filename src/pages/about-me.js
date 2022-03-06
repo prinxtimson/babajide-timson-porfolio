@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -41,8 +40,14 @@ const AboutMePage = () => (
       </p>
       <p>
         Currently, I work as a Remote Senior Developer with{" "}
-        <Link to="https://tritekconslting.co.uk">Tritek Consulting Ltd</Link>, a
-        UK base company.
+        <a
+          href="https://tritekconslting.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Tritek Consulting Ltd
+        </a>
+        , a UK base company.
       </p>
     </div>
     <div className="my-4">
@@ -64,6 +69,7 @@ const AboutMePage = () => (
                     aria-valuenow={skill.level}
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    aria-label="progress"
                   ></div>
                 </div>
               </div>
@@ -100,9 +106,14 @@ const SKILLS = [
       level: 95,
     },
     {
-      id: "5",
-      value: "GatsbyJS",
-      level: 75,
+      id: "11",
+      value: "Firebase",
+      level: 90,
+    },
+    {
+      id: "12",
+      value: "MongoDB",
+      level: 96,
     },
   ],
   [
@@ -110,6 +121,11 @@ const SKILLS = [
       id: "8",
       value: "React Native",
       level: 90,
+    },
+    {
+      id: "5",
+      value: "GatsbyJS",
+      level: 75,
     },
     {
       id: "6",
