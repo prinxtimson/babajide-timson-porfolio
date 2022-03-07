@@ -14,7 +14,6 @@ const NotFoundPage = () => (
         layout="fullWidth"
         placeholder="tracedSVG"
         alt="404"
-        className="mb-3"
       />
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </div>

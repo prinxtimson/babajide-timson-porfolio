@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { StaticImage } from "gatsby-plugin-image"
 import "../styles/index.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -22,7 +22,11 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="col-lg">
-        <img src={UndrawProgramming} alt="A Programmer Illustration" />
+        <StaticImage
+          src="../images/undraw_programming.svg"
+          layout="fullWidth"
+          alt="A Programmer Illustration"
+        />
       </div>
     </div>
   </Layout>
