@@ -146,8 +146,8 @@ const Layout = ({ children }) => {
           </div>
           <div className="d-flex justify-content-center mt-4">
             <p style={{ fontSize: 14 }}>
-              © {new Date().getFullYear()}, Babajide Timson. All rights
-              reserved.
+              © {new Date().getFullYear()}, <a href="/">Babajide Timson.</a> All
+              rights reserved.
             </p>
           </div>
         </footer>
