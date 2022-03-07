@@ -14,10 +14,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /bootstrap/,
-            use: loaders.null(),
-          },
-          {
             test: /404/,
             use: loaders.null(),
           },
