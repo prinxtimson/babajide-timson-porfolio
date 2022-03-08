@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import "../styles/index.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import UndrawProgramming from "../images/undraw_programming.svg"
 
 const IndexPage = () => (
   <Layout>
