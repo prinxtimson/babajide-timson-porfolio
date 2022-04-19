@@ -54,10 +54,13 @@ export const query = graphql`
         id
         name
         featuredImage {
+          file {
+            url
+          }
           gatsbyImageData(
             placeholder: TRACED_SVG
             layout: CONSTRAINED
-            height: 180
+            formats: AUTO
           )
         }
         excerpt

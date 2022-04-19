@@ -8,7 +8,7 @@ import "../styles/index.css"
 
 const ProjectCard = ({ projects = [] }) => {
   return (
-    <div className="d-flex flex-wrap align-items-center justify-content-center">
+    <div className="d-flex flex-wrap justify-content-center">
       {projects.map(project => {
         const {
           id,
@@ -30,6 +30,7 @@ const ProjectCard = ({ projects = [] }) => {
               image={pathToImage}
               alt={name}
               className="card-img-top"
+              //formats={["auto", "webp", "avif", "png"]}
             />
             <div className="card-body">
               <Link
