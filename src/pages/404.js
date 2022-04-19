@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <div className="d-flex flex-grow-1 justify-content-center align-items-center flex-column">
       <h1>404: Not Found</h1>
 
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <p>You just hit a route that doesn&#39;t exist... the sadness..</p>
     </div>
   </Layout>
 )
