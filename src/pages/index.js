@@ -16,8 +16,8 @@ const IndexPage = () => (
         </h1>
         <h2 style={{ color: "#08fdd8" }}>Web and Software Developer</h2>
         <p className="text-muted">
-          Experineced Backend and Frontend Developer, and WordPress Expert. Very
-          good in Javascript and PHP languages and their frameworks.
+          Experineced Backend and Frontend Developer, and WordPress Expert.
+          Excellent in Javascript, PHP languages and their frameworks.
         </p>
       </div>
       <div className="col-lg">

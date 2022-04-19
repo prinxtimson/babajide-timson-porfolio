@@ -137,7 +137,10 @@ const Layout = ({ children }) => {
               <div className="d-flex flex-column align-items-center d-md-block">
                 <span style={{ color: "#08fdd8" }}>Say hello</span>
                 <p className="mb-0">
-                  <a href="mailto:timson.babajide@gmail.com">
+                  <a
+                    href="mailto:timson.babajide@gmail.com"
+                    //style={{ color: "#fd2155" }}
+                  >
                     timson.babajide@gmail.com
                   </a>
                 </p>

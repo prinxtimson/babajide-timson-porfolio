@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-//import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
@@ -17,16 +16,16 @@ const ProjectPage = ({ data }) => {
         <div className="col-lg-8">
           <h1 style={{ color: "#08fdd8" }}>Projects</h1>
           <p className="lh-lg">
-            While working as a freelancer and currently as a Senior Remote
-            Developer for{" "}
+            My position as a Senior Software Developer for{" "}
             <Link to="https://tritekconslting.co.uk">
               Tritek Consulting Ltd
             </Link>
-            , I have worked on several types projects (e.g RPA Web App, Project
-            Management Web App, Custom WordPress Plugin e.t.c) with different
-            technology ranging from a CMS platform like WordPress, Shopify and
-            Big Commerce to using frameworks like ReactJs, React Native,
-            Laravel, AngularJs, Firebase, GatsbyJs and Nodejs.{" "}
+            as well as my freelancing gig, have given me opportunities to work
+            on various projects (e.g RPA Web App, Project Management Web App,
+            Custom WordPress Plugin e.t.c) with different technology ranging
+            from a CMS platform like WordPress, Shopify and Big Commerce to
+            using frameworks like ReactJs, React Native, Laravel, AngularJs,
+            Firebase, GatsbyJs and Nodejs.{" "}
           </p>
 
           <p>View some of my selected projects below.</p>
@@ -61,6 +60,7 @@ export const query = graphql`
             placeholder: TRACED_SVG
             layout: CONSTRAINED
             formats: AUTO
+            height: 150
           )
         }
         excerpt

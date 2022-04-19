@@ -22,24 +22,25 @@ const AboutMePage = () => (
         <p className="lh-lg">
           Hi, my name is Babajide Timson, and I am a FullStack Developer and
           Mobile App Developer with over 4 years of commercial experiences
-          working on verse verieties of projects.
+          working on a range of versatile projects.
         </p>
         <p className="lh-lg">
-          I am a hard working, problem solver and self motivated person who love
-          taking on new challenges, never before worked on type of project. I
-          also enjoy learning new things and build interesting new things.
+          I am a hard working, problem solver and self motivated person who
+          loves taking on new challenges and opened to the experiences and
+          skills I can develop even from projects I have never worked on before.
+          I also enjoy learning and building interesting new things.
         </p>
       </div>
     </div>
     <div className="mb-2">
       <p className="lh-lg">
-        I have worked with different frameworks like React, Angular, React
-        Native, NodeJs and Laravel. I have also different CMS platforms like
-        Wordpress, Big Commerce and Shopify depending on the project
-        specifications.{" "}
+        I have worked with different frameworks such as React, Angular, React
+        Native, NodeJs and Laravel. In addition, I have critical experience
+        using different CMS platforms like Wordpress, Big Commerce and Shopify
+        depending on the project specifications.{" "}
       </p>
       <p>
-        Currently, I work as a Remote Senior Developer with{" "}
+        Currently, I work remotely as a Senior Software Developer with{" "}
         <a
           href="https://tritekconslting.co.uk"
           target="_blank"
